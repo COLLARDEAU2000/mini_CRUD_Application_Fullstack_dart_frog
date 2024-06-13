@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class UserService {
-  final String baseUrl = 'http://127.0.0.1:8080/users';
+  final String baseUrl = 'http://localhost:8080/users';
   Future<List<dynamic>> getUsers() async {
     try {
       final response = await http.get(Uri.parse(baseUrl));
